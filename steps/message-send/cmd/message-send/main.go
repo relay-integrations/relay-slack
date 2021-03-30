@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 
-	"github.com/puppetlabs/nebula-sdk/pkg/log"
-	"github.com/puppetlabs/nebula-sdk/pkg/taskutil"
+	"github.com/puppetlabs/relay-sdk-go/pkg/log"
+	"github.com/puppetlabs/relay-sdk-go/pkg/taskutil"
 	"github.com/slack-go/slack"
 )
 

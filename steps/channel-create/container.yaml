@@ -1,8 +1,0 @@
-apiVersion: container/v1
-kind: StepContainer
-name: slack-step-channel-create
-inherit: {from: sdk, name: go.v1}
-title: Create a Slack channel
-description: This step creates a Slack channel.
-settings:
-  CommandPath: cmd/channel-create

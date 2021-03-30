@@ -1,8 +1,0 @@
-apiVersion: container/v1
-kind: StepContainer
-name: slack-step-message-send
-inherit: {from: sdk, name: go.v1}
-title: Send a message to a Slack channel
-description: This step sends a message to a Slack channel.
-settings:
-  CommandPath: cmd/message-send
