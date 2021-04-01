@@ -4,8 +4,8 @@
 import os
 import sys
 from relay_sdk import Interface, Dynamic as D
-from slack import WebClient
-from slack.errors import SlackApiError
+from slack_sdk import WebClient
+from slack_sdk.errors import SlackApiError
 
 relay = Interface()
 
