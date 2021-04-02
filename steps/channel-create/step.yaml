@@ -9,7 +9,7 @@ tags:
 version: 1
 summary: Create a Slack channel
 description: |
-  This step creates a Slack channel and invites a user.
+  Creates a Slack channel and invites a user.
 build:
   apiVersion: build/v1
   kind: Docker

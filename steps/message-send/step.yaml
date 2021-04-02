@@ -9,7 +9,7 @@ tags:
 version: 1
 summary: Send a message to a Slack channel
 description: |
-  This step sends a message to a Slack channel.
+  Sends a message to a Slack channel that you choose.
 build:
   apiVersion: build/v1
   kind: Docker

@@ -9,7 +9,7 @@ tags:
 version: 1
 summary: Get member id by email
 description: |
-  This step allows you to provide a users email address so that you can retreive their member id in Slack.
+  Retrieve Slack member ID provided a users email address.
 build:
   apiVersion: build/v1
   kind: Docker
