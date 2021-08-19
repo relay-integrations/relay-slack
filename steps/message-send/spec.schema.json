@@ -27,13 +27,16 @@
     "message": {
       "type": "string",
       "description": "Message to send."
+    },
+    "blocks": {
+      "type": "string",
+      "description": "Slack API Blocks to send"
     }
   },
   "required": [
     "connection",
     "channel",
-    "username",
-    "message"
+    "username"
   ],
   "additionalProperties": false
 }
