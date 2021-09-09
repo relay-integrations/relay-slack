@@ -1,4 +1,4 @@
-module github.com/relay-integrations/relay-slack/actions/steps/message-send
+module github.com/relay-integrations/relay-slack/steps/message-send
 
 go 1.16
 
