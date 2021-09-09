@@ -20,15 +20,25 @@ schemas:
     source: file
     file: spec.schema.json
 examples:
-  - summary: Send a message
+  - summary: Send a Slack message using text
     content:
       apiVersion: v1
       kind: Step
       name: send-message
       image: relaysh/slack-step-message-send
       spec:
-        channel: !Parameter slack-channel
-        connection: !Connection { type: slack, name: my-slack-account }
-        message: !Parameter message # Example: "hello Relay!"
-        blocks: !Parameter blocks # Example: "[{"type": "section","text": {"type": "mrkdwn", "text": "Hello from Relay!"}}]"
-        username: !Parameter username # Example: "Relay Workflows"
+        channel: ${parameters.slack-channel}
+        connection: ${connections.slack.my-slack-account}
+        message: ${parameters.message} # Example: "hello Relay!"
+        username: ${parameters.username} # Example: "Relay Workflows"
+  - summary: Send a Slack message using blocks
+    content:
+      apiVersion: v1
+      kind: Step
+      name: send-message
+      image: relaysh/slack-step-message-send
+      spec:
+        channel: ${parameters.slack-channel}
+        connection: ${connections.slack.my-slack-account}
+        blocks: ${parameters.block} # Example: '[{"type": "section","text": {"type": "mrkdwn", "text": "Hello from Relay!"}}]'
+        username: ${parameters.username} # Example: "Relay Workflows"

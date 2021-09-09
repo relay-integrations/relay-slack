@@ -46,8 +46,8 @@ func main() {
 		log.Fatal("specify the Slack connection to use")
 	} else if spec.Connection.APIToken == "" {
 		log.Fatal("the specified connection must be a Slack connection")
-	} else if spec.Message == "" || spec.Blocks == "" {
-		log.Fatal("specify the message, or the api block, to send to Slack")
+	} else if spec.Message == "" && spec.Blocks == "" {
+		log.Fatal("specify the message or blocks to send to Slack")
 	} else if spec.Channel == "" {
 		log.Fatal("specify the channel to send the message to")
 	}
