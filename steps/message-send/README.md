@@ -2,8 +2,7 @@
 
 This [Slack](https://slack.com) step sends a message to a desired channel.
 
-This message can either be via the Slack Block API, or as a direct message - at least one must be used.
-If both are supplied, then behavior is defined by the Slack SDKs, with more info found [here](https://api.slack.com/methods/chat.postMessage#text_usage).
+This message can either be via [blocks](https://api.slack.com/reference/block-kit/blocks) or as a direct message; at least one must be used. If both are supplied, the behavior is defined by the [Slack API](https://api.slack.com/methods/chat.postMessage#text_usage).
 
 In order to connect to Slack you will need to **Create a new Slack app** at [https://api.slack.com/apps/](https://api.slack.com/apps?new_app=1), then:
 

@@ -30,7 +30,7 @@
     },
     "blocks": {
       "type": "string",
-      "description": "Slack API Blocks to send"
+      "description": "Blocks to send."
     }
   },
   "required": [
